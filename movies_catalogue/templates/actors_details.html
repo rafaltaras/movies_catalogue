@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container">
+
+   <h1 class="my-4">
+    <h3></h3>
+   </h1>
+
+
+   <div class="row">
+     <div class="col-md-8">
+        <img src="{{ tmdb_image_url(person_details.profile_path, "w300") }}">
+     </div>
+     <div class="col-md-4">
+         <h3>{{ person_details.name }}</h3>
+       <p>
+           {{ person_details.biography }}
+       </p>
+       <dl>
+        <dt>Data urodzenia</dt>
+        <dd>{{ person_details.birthday }}</dd>
+        <dt>Miejsce urodzenia</dt>
+        <dd>{{ person_details.place_of_birth }}</dd>
+      </dl>
+         </dl>
+     </div>
+   </div>
+   </div>
+ </div>
+
+{% endblock %}
