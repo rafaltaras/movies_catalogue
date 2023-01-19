@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, url_for, redirect, flash
-from movies_catalogue.lib.tmdb_client import films
 import random
 import datetime
+from lib.tmdb_client import films
 
 app = Flask(__name__)
 
